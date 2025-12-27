@@ -6,18 +6,23 @@ const students = [
 ];
 
 // Task 1
+console.log('Task 1');
+
 const studentsNameUpperCase = students.map(student => student.name.toUpperCase());
 console.log(studentsNameUpperCase);
 
 // Task 2
+console.log('Task 2');
 const passStudents = students.filter(student => student.marks >= 60);
 console.log(passStudents);
 
 // Task 3
+console.log('Task 3');
 const totalMarks = students.reduce((sum, student) => sum + student.marks, 0);
 console.log(totalMarks);
 
 // Task 4
+console.log('Task 4');
 const topperStudent = students.reduce((topper, curr) =>
     curr.marks > topper.marks ? curr : topper
 );
